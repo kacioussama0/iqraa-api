@@ -28,5 +28,5 @@ Route::prefix('admin')->middleware('auth')->group(function () {
     Route::get('messages',[\App\Http\Controllers\MessageController::class,'messages']);
     Route::resource('images',\App\Http\Controllers\ImageController::class)->except(['categoryImages']);
     Route::get('categories/{categoryId}/images',[\App\Http\Controllers\ImageController::class,'categoryImages']);
-
+    Route::post('posts/uploadImage',[\App\Http\Controllers\PostController::class,'uploadImage'])->name('posts.uploadImage');
 });

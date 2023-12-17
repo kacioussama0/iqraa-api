@@ -83,7 +83,6 @@ class PostController extends Controller
     public function update(Request $request, Post $post)
     {
 
-
         $data = $request->validate([
             'title'=> 'required',
             'content'=> 'required',
@@ -131,6 +130,19 @@ class PostController extends Controller
     public function latestPosts() {
         $posts = Post::where('is_published',1)->latest()->get()->take(3);
         return response()->json(PostResource::collection($posts));
+    }
+
+
+
+    public function uploadImage(Request $request) {
+
+        if($request -> hasFile('upload')) {
+            $image = $request->file('upload')->store('posts/images','public');
+            return response()->json(['filename' => $image , 'uploaded' => 1 , 'url' => asset('storage/' . $image)]);
+        }
+
+        return  "";
+
     }
 
 }
