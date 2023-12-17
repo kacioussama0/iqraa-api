@@ -102,16 +102,50 @@
         </form>
     </div>
 
-    <script src="{{asset('assets/js/tinymce/tinymce.min.js')}}"></script>
-    <script>
-        tinymce.init({
-            selector: '#content',
-            plugins: 'advlist link image lists code'
-        });
+    <script src="{{asset('ckeditor/build/ckeditor.js')}}"></script>
 
-        tinymce.init({
-            selector: '#content_fr',
-            plugins: 'advlist link image lists code'
-        });
+    <script>ClassicEditor
+            .create( document.querySelector( '#content' ), {
+
+                licenseKey: '',
+
+                ckfinder: {
+                    uploadUrl: "{{route('posts.uploadImage') . '?_token=' . csrf_token()}}",
+
+                }
+
+            } )
+            .then( editor => {
+                window.editor = editor;
+
+
+
+
+            } )
+            .catch( error => {
+                console.error( 'Oops, something went wrong!' );
+                console.error( 'Please, report the following error on https://github.com/ckeditor/ckeditor5/issues with the build id and the error stack trace:' );
+                console.warn( 'Build id: qiybqic1scos-2mtgwv7b85hg' );
+                console.error( error );
+            } );
+    </script>
+
+    <script>ClassicEditor
+            .create( document.querySelector( '#content_fr' ), {
+                licenseKey: '',
+                ckfinder: {
+                    uploadUrl: "{{route('posts.uploadImage') . '?_token=' . csrf_token()}}",
+                }
+
+            } )
+            .then( editor => {
+                window.editor = editor;
+            } )
+            .catch( error => {
+                console.error( 'Oops, something went wrong!' );
+                console.error( 'Please, report the following error on https://github.com/ckeditor/ckeditor5/issues with the build id and the error stack trace:' );
+                console.warn( 'Build id: qiybqic1scos-2mtgwv7b85hg' );
+                console.error( error );
+            } );
     </script>
 @endsection
