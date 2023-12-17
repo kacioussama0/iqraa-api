@@ -102,7 +102,7 @@
         </form>
     </div>
 
-    <script src="{{asset('ckeditor/build/ckeditor.js')}}"></script>
+    <script src="{{asset('assets/ckeditor/build/ckeditor.js')}}"></script>
 
     <script>ClassicEditor
             .create( document.querySelector( '#content' ), {
