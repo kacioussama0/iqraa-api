@@ -30,3 +30,5 @@ Route::prefix('admin')->middleware('auth')->group(function () {
     Route::get('categories/{categoryId}/images',[\App\Http\Controllers\ImageController::class,'categoryImages']);
     Route::post('posts/uploadImage',[\App\Http\Controllers\PostController::class,'uploadImage'])->name('posts.uploadImage');
 });
+
+    Route::resource('/latest-news',\App\Http\Controllers\LatestNewsController::class);

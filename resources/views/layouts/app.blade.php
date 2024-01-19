@@ -50,8 +50,14 @@
                         </li>
 
                         <li class="nav-item">
+                            <a class="nav-link" href="{{ url('/latest-news') }}">News</a>
+                        </li>
+
+                        <li class="nav-item">
                             <a class="nav-link" href="{{ url('admin/messages') }}">Messages</a>
                         </li>
+
+
 
                         @endauth
 

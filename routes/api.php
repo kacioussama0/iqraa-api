@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/categories',[\App\Http\Controllers\CategoryController::class,'categories']);
+Route::get('/latest-news',[\App\Http\Controllers\LatestNewsController::class,'latestNews']);
 Route::get('/posts/{slug}',[\App\Http\Controllers\PostController::class,'post']);
 Route::get('/latest-posts',[\App\Http\Controllers\PostController::class,'latestPosts']);
 Route::get('/categories/{category}/images',[\App\Http\Controllers\CategoryController::class,'showImages']);
