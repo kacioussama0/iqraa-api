@@ -20,8 +20,8 @@ class ImageResource extends JsonResource
 
         return [
           'path' => asset('storage/' . $this->path),
-          'width' => getimagesize($imageData)[0],
-          'height' => getimagesize($imageData)[1]
+          'width' => $imageData,
+          'height' => $imageData
         ];
     }
 }
