@@ -5,7 +5,7 @@ namespace App\Http\Resources;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\Facades\Storage;
-
+use Intervention\Image\Laravel\Facades\Image;
 class ImageResource extends JsonResource
 {
     /**
@@ -16,12 +16,12 @@ class ImageResource extends JsonResource
     public function toArray(Request $request): array
     {
 
-        $imageData = Storage::get('public/'.$this->path);
+        $imageData = Image::read('storage/' . $this->path);
 
         return [
           'path' => asset('storage/' . $this->path),
-          'width' => $imageData,
-          'height' => $imageData
+           'width' => $imageData->width(),
+           'height' => $imageData->height(),
         ];
     }
 }
