@@ -16,7 +16,7 @@ class ImageResource extends JsonResource
     public function toArray(Request $request): array
     {
 
-        $imageData = Storage::get('storage/'.$this->path);
+        $imageData = Storage::get('public/'.$this->path);
 
         return [
           'path' => asset('storage/' . $this->path),
