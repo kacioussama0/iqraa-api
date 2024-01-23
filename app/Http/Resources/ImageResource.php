@@ -15,10 +15,13 @@ class ImageResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
+
+        $imageData = Storage::get('public/'.$this->path);
+
         return [
           'path' => asset('storage/' . $this->path),
-          'width' => getimagesize(Storage::get('public/'.$this->path))[0],
-          'height' => getimagesize(Storage::get('public/'.$this->path))[1]
+          'width' => getimagesize($imageData)[0],
+          'height' => getimagesize($imageData)[1]
         ];
     }
 }
