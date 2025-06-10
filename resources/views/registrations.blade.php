@@ -9,9 +9,9 @@
         </h1>
 
         <section id="registration" class="mb-4">
-            <div class="row align-items-center">
+            <div class="row gy-3 align-items-center mb-5">
 
-                <div class="col-md-6">
+                <div class="col-lg-6 order-1 order-lg-0">
 
                     <div class="card rounded-5 border-0 shadow-sm">
 
@@ -32,7 +32,7 @@
 
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-lg-6 order-0 order-lg-1">
                     <img src="{{ asset('assets/imgs/inscriptions.png') }}" alt="inscriptions" class="img-fluid">
                 </div>
 
@@ -191,7 +191,7 @@
         </div>
 
         <div class="text-center mt-5">
-            <a href="http://inscription-eag.fcigeneve.ch" class="btn btn-lg btn-outline-primary px-5 py-3 fw-bold" target="_blank">
+            <a href="http://inscription-eag.fcigeneve.ch" class="btn btn-lg btn-outline-danger px-5 py-3 fw-bold inscription-btn" target="_blank">
                 <i class="fa-duotone fa-globe me-2"></i> {{ __('inscription.Accéder au formulaire d’inscription') }}
             </a>
         </div>
@@ -205,6 +205,33 @@
 
     </div>
 
+
+    <style>
+
+        .inscription-btn {
+            animation: clignote 3s ease-in-out 3s infinite;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        @keyframes clignote {
+            0% {
+                background: var(--bs-danger);
+                color: #ffffff;
+
+            }
+            50% {
+                background: #ffffff;
+                color: var(--bs-danger);
+            }
+            100% {
+                background: var(--bs-danger);
+                color: #ffffff;
+            }
+        }
+
+
+    </style>
 
 
 @endsection
