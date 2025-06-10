@@ -84,8 +84,9 @@
     @yield('styles')
 
 </head>
-<body>
+<body style="overflow: hidden">
 
+    <x-loader/>
 
     @if(request()->path() == '/')
         <div class="up-bar">
