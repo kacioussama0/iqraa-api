@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Session;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::redirect('','/admin/home');
+Route::get('/',[\App\Http\Controllers\SiteController::class,'index'])->name('site.index');
+Route::get('/who-we-are',[\App\Http\Controllers\SiteController::class,'about'])->name('site.about');
+Route::get('/gallery',[\App\Http\Controllers\SiteController::class,'gallery'])->name('site.gallery');
+Route::get('/faqs',[\App\Http\Controllers\SiteController::class,'faqs'])->name('site.faqs');
+Route::get('/contact',[\App\Http\Controllers\SiteController::class,'contact'])->name('site.contact');
+Route::post('/contact',[\App\Http\Controllers\SiteController::class,'sendContact'])->name('site.sendContact');
+Route::get('/registrations',[\App\Http\Controllers\SiteController::class,'registrations'])->name('site.registrations');
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::post('upload-photo',[\App\Http\Controllers\ImageController::class,'uploadPhoto'])->middleware('auth');
 
@@ -32,3 +39,12 @@ Route::prefix('admin')->middleware('auth')->group(function () {
 });
 
     Route::resource('/latest-news',\App\Http\Controllers\LatestNewsController::class);
+
+
+    Route::get('change-language/{lang}', function ($lang) {
+        if (in_array($lang, ['ar', 'fr'])) {
+            Session::put('locale', $lang);
+            App::setLocale($lang);
+        }
+        return redirect()->back();
+    })->name('change.lang');
