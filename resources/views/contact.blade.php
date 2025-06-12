@@ -2,10 +2,14 @@
 
 @section('content')
 
+    <x-page-title>
+        <x-slot:title>{{ __("Contact") }}</x-slot>
+    </x-page-title>
+
+
     <section class="contact">
 
         <div class="container py-5">
-            <h1 class="fw-bold mb-5">{{ __('Contact') }}</h1>
 
             <div class="row g-3">
                 @foreach($contacts as $info)

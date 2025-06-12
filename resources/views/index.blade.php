@@ -113,7 +113,7 @@
                         </ul>
                 </div>
 
-                <div class="col-lg-6  mt-5">
+                <div class="col-lg-6 align-self-end  mt-5">
                     <img src="{{asset('assets/imgs/goal.png')}}" alt="" class="img-fluid">
                 </div>
 
@@ -180,7 +180,7 @@
             <h4 class="lh-lg fw-normal mb-4"><span class="heading-shape fw-bolder">{{__('home.levels_title')}}</span></h4>
 
             <div class="table-responsive">
-                <table class="table table-primary table-borderless table-striped  rounded-4 overflow-hidden">
+                <table class="table shadow-sm table-primary table-borderless table-striped  rounded-4 overflow-hidden">
 
                     <thead>
                     <tr>
@@ -225,7 +225,7 @@
                 <div class="swiper-wrapper">
 
                     @foreach($countries as $country)
-                        <div class="swiper-slide d-flex  align-items-center">
+                        <div class="swiper-slide d-flex justify-content-center justify-content-lg-start  align-items-center">
                             <div class="fi fi-{{$country}} rounded-4" style="font-size: 80px"></div>
                         </div>
                     @endforeach

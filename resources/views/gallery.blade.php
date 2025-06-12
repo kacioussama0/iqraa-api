@@ -2,16 +2,12 @@
 
 @section('content')
 
+    <x-page-title>
+        <x-slot:title>{{ __("Gallery") }}</x-slot>
+    </x-page-title>
+
 
     <section class="gallery">
-
-
-        <div class="container pt-5">
-
-            <h1 class="fw-bold mb-5">{{ __("Gallery") }}</h1>
-
-
-        </div>
 
         <div class="bg-warning-subtle">
 

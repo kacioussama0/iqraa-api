@@ -1,5 +1,26 @@
 /* Start Global Rules */
 
+.page-title {
+    min-height: 200px;
+    background: var(--bs-warning-bg-subtle);
+    z-index: 0;
+}
+
+.page-title::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("../imgs/Shape Hero.webp");
+    background-size: contain;
+    background-position: top;
+    background-attachment: scroll ;
+    z-index: -1;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+}
+
 @media screen and (min-width: 992px) {
     .heading-shape {
         font-size: 32px;
