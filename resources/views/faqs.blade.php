@@ -24,7 +24,7 @@
                             <div class="accordion-item shadow-sm">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button @if($key != 0 ) collapsed @endif" data-bs-toggle="collapse" data-bs-target="#question_{{$key + 1}}">
-                                        <h5> <i class="fa-duotone fa-question-circle fa-2xl me-1"></i> {{ app()->getLocale() == 'ar' ? $faq['question'] : $faq['question_fr']  }}</h5>
+                                        <h5> <i class="fa-duotone fa-question-circle fa-1x me-1"></i> {{ app()->getLocale() == 'ar' ? $faq['question'] : $faq['question_fr']  }}</h5>
                                     </button>
                                 </h2>
                                 <div id="question_{{$key + 1}}" class="accordion-collapse collapse @if($key == 0 ) show @endif" data-bs-parent="#faqs" >
