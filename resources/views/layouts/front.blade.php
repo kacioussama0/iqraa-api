@@ -196,7 +196,7 @@
 
             </div>
 
-            <p class="text-lg-start text-center mt-2 mt-lg-3">
+            <p class="text-lg-start text-center mt-2 mt-lg-3 d-flex flex-wrap justify-content-center justify-content-lg-start align-items-center gap-3">
                 <img src="/logo-white.svg" alt="" style="width: 60px">
                 {{ __('footer.rights') }} &copy; {{ date('Y') }}
             </p>
