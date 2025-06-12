@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Faq;
+use App\Models\LatestNews;
 use Illuminate\Http\Request;
 
 class SiteController extends Controller
@@ -71,8 +72,9 @@ class SiteController extends Controller
 
         $countries =  ['iq','sy','lb','jo','ps','ye','sd','eg','ly','tn','dz','ma','mr','pk','af','tr','al','xk','ng','sn','gn','so','er','bd','ba','in','cn','br','fr','ch','sa','es','it','km','mk'];
 
+        $news = LatestNews::latest()->limit(5)->get();
 
-        return view('index',compact('statistics', 'modules', 'countries'));
+        return view('index',compact('statistics', 'modules', 'countries','news'));
     }
 
     public function about()

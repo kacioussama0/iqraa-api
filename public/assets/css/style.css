@@ -193,41 +193,35 @@ li.active a {
         padding: 4px 7px;
     }
 }
-.trending-news .trending-news-inner .trending-news-slider .item-single a:hover {
-    color: var(--bs-warning);
-}
-.trending-news .trending-news-inner .trending-news-slider .slick-arrow {
-    position: absolute;
-}
-.trending-news .trending-news-inner .trending-news-slider .slick-next,
-.trending-news .trending-news-inner .trending-news-slider .slick-prev {
-    cursor: pointer;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #eee;
-    background: #fff;
-    overflow: hidden;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-}
-.trending-news .trending-news-inner .trending-news-slider .slick-next::before,
-.trending-news .trending-news-inner .trending-news-slider .slick-prev::before {
-    font-size: 14px;
-}
-.trending-news .trending-news-inner .trending-news-slider .slick-next:hover,
-.trending-news .trending-news-inner .trending-news-slider .slick-prev:hover {
-    background: #f7f7f7;
-}
-.trending-news .trending-news-inner .trending-news-slider .slick-prev {
-    right: auto;
-    left: 29px;
-    bottom: 0;
-}
-.trending-news .trending-news-inner .trending-news-slider .slick-next {
-    left: 0;
+
+
+.news-bar {
+    font-size: 0.95rem;
 }
 
+.bg-gradient-primary {
+    background: linear-gradient(90deg, #ff5722, #e91e63);
+}
+
+marquee span {
+    white-space: nowrap;
+}
+
+.badge {
+    font-size: 0.85rem;
+    letter-spacing: 0.3px;
+}
+
+@media (max-width: 768px) {
+    .news-bar {
+        font-size: 0.8rem;
+    }
+
+    .badge {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+    }
+}
 
 
 .ad {
@@ -240,11 +234,12 @@ li.active a {
 
 .statistics {
     min-height: 500px;
-    background-image: url("../imgs/landing-4.webp");
+    background-image: url("../imgs/landing-4.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: bottom center;
     position: relative;
     display: flex;
+    background-attachment: fixed;
     justify-content: center;
     align-items: center;
     z-index: 5;
@@ -259,7 +254,7 @@ li.active a {
     top: 0;
     left: 0;
     background-image: linear-gradient(to right, var(--bs-primary) 55%, var(--bs-warning));
-    opacity: 0.95;
+    opacity: 0.85;
     z-index: -1;
 }
 
@@ -272,4 +267,17 @@ li.active a {
 .card:hover {
     cursor: pointer;
     transform: rotate(-1deg);
+}
+.news-bar {
+    font-size: 1rem;
+}
+
+.badge {
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+marquee span {
+    white-space: nowrap;
+    display: inline-block;
 }

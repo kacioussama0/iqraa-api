@@ -2,7 +2,28 @@
 
 @section('content')
 
+
+    <div class="news-bar bg-gradient bg-dark shadow-sm py-2" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+        <div class="container d-flex align-items-center gap-3">
+        <span class="badge bg-warning text-dark py-2 px-3 fw-bold">
+            <i class="fas fa-bullhorn me-1"></i> {{ __('Dernières nouvelles') }}
+        </span>
+            <div style="height: 2.5rem;" class="flex-grow-1 overflow-hidden">
+                <marquee behavior="scroll" direction="up" scrolldelay="50" scrollamount="1" class="text-white h-100">
+                    @foreach($news as $item)
+                        <div class="mb-3">
+                            <i class="fas fa-circle text-warning me-2"></i>
+                            {!! app()->getLocale() == 'ar' ? $item->content : $item->content_fr !!}
+                        </div>
+                    @endforeach
+                </marquee>
+            </div>
+        </div>
+    </div>
+
+
     <!--    Start Landing Page  -->
+
 
     <section class="landing-page pt-5  position-relative text-bg-warning bg-warning-subtle">
 

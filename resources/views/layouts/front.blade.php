@@ -83,23 +83,8 @@
 </head>
 <body style="overflow: hidden">
 
-    <x-loader/>
+        <x-loader/>
 
-    @if(request()->path() == '/')
-        <div class="up-bar">
-            <div class="alert alert-danger rounded-0 alert-dismissible fade show mb-0" role="alert">
-                <div class="container text-center d-flex justify-content-center align-items-center">
-                    <h6 class="mb-0">
-                        {{ __('inscription.Barre annonce') }}
-                        <a href="{{url('/registrations')}}" target="_blank" class="alert-link">
-                            {{ __('inscription.Lien formulaire') }}
-                        </a>
-                    </h6>
-                    <button type="button" class="btn-close ms-3" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-            </div>
-        </div>
-    @endif
 
         <header class="{{request()->path() == '/' ? 'bg-warning-subtle' : "shadow-sm"}} ">
         <!--        Start Navbar    -->
