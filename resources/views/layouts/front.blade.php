@@ -128,11 +128,17 @@
 
                     <!--        Start Languages    -->
 
-                    <div class="languages d-flex fs-2">
+                    <div class="languages text-muted">
                         @if(app()->getLocale() === 'ar')
-                            <a href="{{ route('change.lang', ['lang' => 'fr']) }}" class="nav-link active fw-bold fi fi-ch me-2"></a>
+                            <a href="{{ route('change.lang', ['lang' => 'fr']) }}" class="nav-link fw-bold d-flex align-items-center">
+                                <i class="fi fi-ch me-2"></i>
+                                <span>فرنسية</span>
+                            </a>
                         @else
-                            <a href="{{ route('change.lang', ['lang' => 'ar']) }}" class="nav-link active fw-bold fi fi-sa me-2"></a>
+                            <a href="{{ route('change.lang', ['lang' => 'ar']) }}" class="nav-link fw-bold d-flex align-items-center">
+                                <i class="fi fi-sa me-2"></i>
+                                <span>Arabe</span>
+                            </a>
                         @endif
                     </div>
 
