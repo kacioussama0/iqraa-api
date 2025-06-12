@@ -21,8 +21,6 @@
     top: 0;
 }
 
-
-
     .heading-shape {
         font-size: 32px;
         position: relative;
@@ -46,6 +44,12 @@
         animation: jump 0.8s  alternate-reverse infinite ;
     }
 
+
+    @media screen and (max-width: 600px) {
+        .heading-shape {
+            font-size: 18px;
+        }
+    }
 
 
 
