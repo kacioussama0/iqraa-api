@@ -21,7 +21,8 @@
     top: 0;
 }
 
-@media screen and (min-width: 992px) {
+
+
     .heading-shape {
         font-size: 32px;
         position: relative;
@@ -44,7 +45,10 @@
     .jump {
         animation: jump 0.8s  alternate-reverse infinite ;
     }
-}
+
+
+
+
 
 @keyframes fill {
     from {
@@ -66,9 +70,7 @@
     }
 }
 
-.v-p-bar {
-    background: var(--bs-warning) !important;
-}
+
 
 /* End Global Rules */
 
@@ -114,15 +116,6 @@ nav ul li:hover::before , nav ul li.active::before{
 
 .active {
     font-weight: 500;
-}
-
-nav div.social-media a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px !important;
-    height: 40px !important;
-    border-radius: 50% !important;
 }
 
 
@@ -231,10 +224,6 @@ li.active a {
     left: 0;
 }
 
-
-.not-found {
-    height: calc(100vh - 180px);
-}
 
 
 .ad {
