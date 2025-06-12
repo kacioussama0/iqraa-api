@@ -44,18 +44,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <meta name="msapplication-TileColor" content="#1c3557">
     <meta name="theme-color" content="#1c3557">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="اللغة العربية,سويسرا,تربية إسلامية,القرآن الكريم,منهاج إقرأ و ارتق,القراءة,المحادثة والتعبير .,مدرسة جنيف العربية,مدرسة إقرا">
-    <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="Arabic">
-    <meta name="author" content="Kaci Oussama">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>École Arabe Genève</title>
