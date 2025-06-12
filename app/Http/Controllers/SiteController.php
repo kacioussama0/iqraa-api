@@ -44,7 +44,7 @@ class SiteController extends Controller
             [
                 'name' => 'arabic',
                 'icon' => 'fa-language',
-                'color' => 'warning'
+                'color' => 'warning-emphasis'
             ],
             [
                 'name' => 'islamic_education',
@@ -59,12 +59,12 @@ class SiteController extends Controller
             [
                 'name' => 'reading',
                 'icon' => 'fa-book-open-reader',
-                'color' => 'warning'
+                'color' => 'warning-emphasis'
             ],
             [
                 'name' => 'converstion_expression',
                 'icon' => 'fa-comments',
-                'color' => 'warning'
+                'color' => 'warning-emphasis'
             ]
 
         ];
