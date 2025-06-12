@@ -62,13 +62,13 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:url" content="{{url('/')}}">
-    <meta property="og:image" content="{{asset('imgs/logo.jpg')}}">
+    <meta property="og:image" content="{{asset('assets/imgs/logo.jpg')}}">
     <meta property="og:image:width" content="800">
     <meta property="og:image:height" content="800">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="École Arabe Genève">
     <meta name="twitter:description" content="École privée située à Genève, affiliée à la Fondation Culturelle Islamique. Fondée en 1978, elle offre un enseignement de qualité en langue arabe, éducation islamique et Coran dans un environnement bienveillant.">
-    <meta property="twitter:image" content="{{asset('imgs/logo.jpg')}}">
+    <meta property="twitter:image" content="{{asset('assets/imgs/logo.jpg')}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="{{url('/')}}">
     <meta name="robots" content="index, follow">
