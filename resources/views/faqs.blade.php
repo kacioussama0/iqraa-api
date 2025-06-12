@@ -12,9 +12,9 @@
         <div class="container py-5">
 
 
-            <div class="row align-items-center">
+            <div class="row align-items-center gy-5">
 
-                <div class="col-md-7">
+                <div class="col-md-7 order-lg-0 order-1">
 
                     <div class="accordion" id="faqs">
 
@@ -41,7 +41,7 @@
 
                 </div>
 
-                <div class="col-md-5">
+                <div class="col-md-5 order-lg-1 order-0">
 
                     <img src="{{asset('assets/imgs/faq.png')}}" alt="faq png" class="img-fluid">
 

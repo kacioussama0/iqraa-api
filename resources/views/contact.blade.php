@@ -46,10 +46,10 @@
 
             <div class="form-contact my-5">
 
-                <div class="row">
+                <div class="row gy-5">
 
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 order-lg-0 order-1">
 
                         <form action="" method="POST">
 
@@ -102,7 +102,7 @@
 
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 order-lg-1 order-0">
                         <img src="{{asset('assets/imgs/contact.png')}}" alt="contact us" class="img-fluid">
                     </div>
 
