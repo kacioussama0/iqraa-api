@@ -128,7 +128,7 @@
 
                     <!--        Start Languages    -->
 
-                    <div class="languages d-flex">
+                    <div class="languages d-flex fs-2">
                         @if(app()->getLocale() === 'ar')
                             <a href="{{ route('change.lang', ['lang' => 'fr']) }}" class="nav-link active fw-bold fi fi-ch me-2"></a>
                         @else
