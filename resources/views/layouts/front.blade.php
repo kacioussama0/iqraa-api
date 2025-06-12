@@ -56,25 +56,22 @@
     <meta name="language" content="Arabic">
     <meta name="author" content="Kaci Oussama">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Primary Meta Tags -->
-    <title>مدرسة جنيف العربية</title>
-    <meta name="title" content="مدرسة جنيف العربية" />
-    <meta name="description" content="أن نكون مدرسة متميزة في تثقيف وحماية الهوية الإسلامية لأبنائنا. وأن نكون نموذجاً يحتذى به للمدارس العربية في أوروبا." />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://earabege.ch/" />
-    <meta property="og:title" content="مدرسة جنيف العربية" />
-    <meta property="og:description" content="أن نكون مدرسة متميزة في تثقيف وحماية الهوية الإسلامية لأبنائنا. وأن نكون نموذجاً يحتذى به للمدارس العربية في أوروبا." />
-    <meta property="og:image" content="/logo.svg" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <title>École Arabe Genève</title>
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://earabege.ch/" />
-    <meta property="twitter:title" content="مدرسة جنيف العربية" />
-    <meta property="twitter:description" content="أن نكون مدرسة متميزة في تثقيف وحماية الهوية الإسلامية لأبنائنا. وأن نكون نموذجاً يحتذى به للمدارس العربية في أوروبا." />
-    <meta property="twitter:image" content="/logo.svg" />
+    <meta name="description" content="École privée située à Genève, affiliée à la Fondation Culturelle Islamique. Fondée en 1978, elle offre un enseignement de qualité en langue arabe, éducation islamique et Coran dans un environnement bienveillant.">
+    <meta name="keywords" content="école islamique, enseignement islamique, spiritualité musulmane, langue arabe, vie du Prophète Muhammad, Sira, piliers de l’Islam, culture musulmane">
+    <meta name="author" content="Fondation Culturelle Islamique de Genève">
+    <meta property="og:title" content="École Arabe Genève">
+    <meta property="og:description" content="École privée située à Genève, affiliée à la Fondation Culturelle Islamique. Fondée en 1978, elle offre un enseignement de qualité en langue arabe, éducation islamique et Coran dans un environnement bienveillant.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="École Arabe Genève">
+    <meta name="twitter:description" content="École privée située à Genève, affiliée à la Fondation Culturelle Islamique. Fondée en 1978, elle offre un enseignement de qualité en langue arabe, éducation islamique et Coran dans un environnement bienveillant.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="{{url()}}">
+    <meta name="robots" content="index, follow">
 
     <link rel="stylesheet" href="{{asset('assets/css/fontawesome/css/all.min.css')}}">
     <link rel="stylesheet" href="{{asset(app()->getLocale() === 'ar' ? 'assets/css/bootstrap.rtl.min.css' : 'assets/css/bootstrap.min.css')}}">
