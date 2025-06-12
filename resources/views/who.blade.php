@@ -4,7 +4,7 @@
 
 
     <x-page-title>
-        <x-slot:title>Qui sommes-nous</x-slot>
+        <x-slot:title>{{__("who.title")}}</x-slot>
     </x-page-title>
 
     <section class="about-us">
