@@ -45,6 +45,27 @@
             </div>
 
             <div class="form-group">
+                <label for="description" class="form-label">Description</label>
+                <textarea name="description" id="description" class="form-control" cols="30" rows="5">{{old('description')}}</textarea>
+                @error('description')
+                <span class="text-danger">{{$message}}</span>
+                @enderror
+            </div>
+
+            <div class="form-group">
+                <label for="description_fr" class="form-label">Description Fr</label>
+                <textarea name="description_fr" id="description_fr" class="form-control" cols="30" rows="5">{{old('description_fr')}}</textarea>
+                @error('description_fr')
+                <span class="text-danger">{{$message}}</span>
+                @enderror
+            </div>
+
+
+
+
+
+
+            <div class="form-group">
                 <label for="type" class="form-label">Type</label>
                 <select name="type" id="type" class="form-select">
                     <option value="posts">Posts</option>

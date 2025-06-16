@@ -55,8 +55,8 @@
 
                                 </div>
 
-                                <div class="card-footer bg-transparent">
-                                    <a href="{{url('/gallery/' . $category->slug)}}" class="btn btn-outline-primary d-block my-3">دخول</a>
+                                <div class="card-footer bg-transparent border-0">
+                                    <a href="{{url('/gallery/' . $category->slug)}}" class="btn btn-outline-primary  stretched-link d-block mb-3">دخول</a>
 
 
                                 </div>

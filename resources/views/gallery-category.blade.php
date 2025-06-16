@@ -6,6 +6,11 @@
         <x-slot:title>
             {{ app()->getLocale() == 'ar' ? $category->name : $category->name_fr }}
         </x-slot>
+
+        <x-slot:description>
+            {{ app()->getLocale() == 'ar' ? $category->description : $category->description_fr }}
+        </x-slot>
+
     </x-page-title>
 
 

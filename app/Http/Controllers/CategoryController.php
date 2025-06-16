@@ -40,6 +40,8 @@ class CategoryController extends Controller
             'slug' => 'unique:categories',
             'slug_fr' => 'unique:categories',
             'type' => 'required',
+            'description' => 'nullable|string|max:1000',
+            'description_fr' => 'nullable|string|max:1000',
         ]);
 
         $validatedData['slug'] = $request->slug ? $request->slug : Str::slug($request->name,'-');
@@ -65,7 +67,7 @@ class CategoryController extends Controller
 
         $posts = $category->posts()->where('is_published',1)->latest()->get();
         return response()->json(PostResource::collection($posts));
-        
+
     }
 
     public function showImages($categorySlug)
@@ -102,6 +104,8 @@ class CategoryController extends Controller
             'name' => 'required|max:255|unique:categories,name,' . $category->id,
             'slug' => 'required',
             'type' => 'required',
+            'description' => 'nullable|string|max:1000',
+            'description_fr' => 'nullable|string|max:1000',
         ]);
 
         $validatedData['slug'] = $request->slug ? $request->slug : Str::slug($request->name,'-');
