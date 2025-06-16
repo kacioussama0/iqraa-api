@@ -72,7 +72,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="{{url('/')}}">
     <meta name="robots" content="index, follow">
-
     <link rel="stylesheet" href="{{asset('assets/css/fontawesome/css/all.min.css')}}">
     <link rel="stylesheet" href="{{asset(app()->getLocale() === 'ar' ? 'assets/css/bootstrap.rtl.min.css' : 'assets/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">

@@ -88,6 +88,13 @@ class SiteController extends Controller
         return view('gallery',compact('categories'));
     }
 
+    public function galleryCategory()
+    {
+        $category = \App\Models\Category::where('type','images')->where('slug', request()->route('category'))->firstOrFail();
+        $images = $category->images()->orderBy('created_at', 'desc')->get();
+        return view('gallery-category', compact('category', 'images'));
+    }
+
     public function faqs()
     {
         $faqs = Faq::orderBy('created_at', 'asc')->get();
