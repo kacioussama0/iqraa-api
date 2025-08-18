@@ -4,7 +4,7 @@
 
        <h1 class="fw-bold mb-4">{{$title}}</h1>
        @if(isset($description))
-           <p class="text-secondary mb-3">{{$description}}</p>
+           <p class="text-dark-emphasis fs-5 mb-3">{{$description}}</p>
        @endif
 
    </div>
