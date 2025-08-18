@@ -162,7 +162,7 @@
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" href="tel:+41797810839">
-                                <i class="fa-duotone fa-phone-alt me-1"></i>
+                                <i class="fa-brands fa-whatsapp me-1"></i>
                                 <span dir="ltr">+(41) 79 781 08 39</span>
                             </a>
                         </li>
@@ -175,7 +175,7 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="mailto:info@fcigeneve.ch">
                                 <i class="fa-duotone fa-mailbox me-1"></i>
-                                Madrassa@fcigeneve.ch
+                                info@ecolearabegeneve.ch
                             </a>
                         </li>
                     </ul>

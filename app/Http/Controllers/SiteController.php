@@ -112,8 +112,8 @@ class SiteController extends Controller
             ],
             [
                 'icon' => 'fa-duotone fa-envelope',
-                'text' => 'Madrassa@fcigeneve.ch',
-                'link' => 'mailto:Madrassa@fcigeneve.ch',
+                'text' => 'info@ecolearabegeneve.ch',
+                'link' => 'mailto:info@ecolearabegeneve.ch',
             ],
             [
                 'icon' => 'fa-duotone fa-location-dot',

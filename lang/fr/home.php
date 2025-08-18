@@ -11,7 +11,7 @@ return [
     "quote" => "L'École Arabe de Genève est le meilleur choix pour votre enfant.",
     "module_title" => "Les matières que nous enseignons",
     "arabic" => "Arabe",
-    "islamic_education" => "Éducation Islamique",
+    "islamic_education" => "Religion",
     "quran" => "Coran",
     "reading" => "Expression orale et écrite",
     "converstion_expression" => "Conversation et Expression",
