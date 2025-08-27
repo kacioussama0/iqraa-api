@@ -66,6 +66,6 @@ return [
 
     'Barre annonce' => '📢 Les inscriptions et réinscriptions pour l\'année scolaire 2025/2026 sont ouvertes —',
     'Lien formulaire' => 'Cliquez ici pour vous inscrire',
-
+    'Inscription Fermee' => 'Les inscriptions sont clôturées pour l\'année scolaire 2025-2026.'
 
 ];
