@@ -9,10 +9,16 @@
             'name' => __("Our School"),
             'link' => '/who-we-are'
         ],
-         [
-            'name' => __("Registration"),
-            'link' => '/registrations'
+//         [
+//            'name' => __("Registration"),
+//            'link' => '/registrations'
+//        ],
+
+        [
+            'name' => __("News"),
+            'link' => '/news'
         ],
+
         [
             'name' => __("Gallery"),
             'link' => '/gallery'
@@ -52,7 +58,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>École Arabe Genève</title>
+    <title>École Arabe Genève | @yield('title')</title>
 
     <meta name="description" content="École privée située à Genève, affiliée à la Fondation Culturelle Islamique. Fondée en 1978, elle offre un enseignement de qualité en langue arabe, éducation islamique et Coran dans un environnement bienveillant.">
     <meta name="keywords" content="école arabe Genève, enseignement islamique Genève, cours arabe Genève, culture islamique, Fondation Culturelle Islamique Genève">
@@ -70,6 +76,9 @@
     <meta name="twitter:description" content="École privée située à Genève, affiliée à la Fondation Culturelle Islamique. Fondée en 1978, elle offre un enseignement de qualité en langue arabe, éducation islamique et Coran dans un environnement bienveillant.">
     <meta property="twitter:image" content="{{asset('assets/imgs/logo.jpg')}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    @yield('meta')
+
     <link rel="canonical" href="{{url('/')}}">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="{{asset('assets/css/fontawesome/css/all.min.css')}}">
@@ -77,7 +86,11 @@
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/flag-icons.min.css')}}">
 
+
+
     @yield('styles')
+
+
 
 </head>
 <body style="overflow: hidden">
@@ -131,7 +144,10 @@
         <!--        End Navbar    -->
     </header>
 
-    @yield('content')
+
+        <main>
+            @yield('content')
+        </main>
 
 
     <!--    Start Footer  -->

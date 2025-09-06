@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Faq;
 use App\Models\LatestNews;
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class SiteController extends Controller
@@ -148,4 +149,28 @@ class SiteController extends Controller
     {
         return view('registrations');
     }
+
+
+    public function news()
+    {
+        $posts = Post::latest()->get();
+        return view('news', compact('posts'));
+    }
+
+
+    public function newsDetail()
+    {
+        if(request()->route('lang') && in_array(request()->route('lang'), ['ar','fr'])) {
+            app()->setLocale(request()->route('lang'));
+        }
+
+        $post = Post::where('slug', request()->route('post'))
+            ->orWhere('slug_fr', request()->route('post'))
+            ->firstOrFail();
+
+
+        return view('news-detail', compact('post'));
+    }
 }
+
+

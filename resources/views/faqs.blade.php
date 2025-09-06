@@ -1,5 +1,11 @@
 @extends('layouts.front')
 
+
+
+
+
+
+
 @section('content')
 
     <x-page-title>

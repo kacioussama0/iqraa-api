@@ -22,6 +22,9 @@ Route::get('/faqs',[\App\Http\Controllers\SiteController::class,'faqs'])->name('
 Route::get('/contact',[\App\Http\Controllers\SiteController::class,'contact'])->name('site.contact');
 Route::post('/contact',[\App\Http\Controllers\SiteController::class,'sendContact'])->name('site.sendContact');
 Route::get('/registrations',[\App\Http\Controllers\SiteController::class,'registrations'])->name('site.registrations');
+Route::get('/news',[\App\Http\Controllers\SiteController::class,'news'])->name('site.news');
+Route::get('/{lang}/news/{post}',[\App\Http\Controllers\SiteController::class,'newsDetail'])->name('site.newsDetail');
+
 
 
 Auth::routes(['register' => false]);
