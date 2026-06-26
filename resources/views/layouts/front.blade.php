@@ -44,7 +44,7 @@
 <html lang="{{app()->getLocale()}}" dir="{{app()->getLocale() === 'ar' ? 'rtl' : 'ltr'}}">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/logo.png" type="image/x-icon">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,13 +68,13 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:url" content="{{url('/')}}">
-    <meta property="og:image" content="{{asset('assets/imgs/logo.jpg')}}">
+    <meta property="og:image" content="{{asset('logo.png')}}">
     <meta property="og:image:width" content="800">
     <meta property="og:image:height" content="800">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="École Arabe de Genève">
     <meta name="twitter:description" content="École privée située à Genève, affiliée à la Fondation Culturelle Islamique. Fondée en 1978, elle offre un enseignement de qualité en langue arabe, éducation islamique et Coran dans un environnement bienveillant.">
-    <meta property="twitter:image" content="{{asset('assets/imgs/logo.jpg')}}">
+    <meta property="twitter:image" content="{{asset('logo.png')}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     @yield('meta')
