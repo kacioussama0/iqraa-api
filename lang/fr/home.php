@@ -4,7 +4,7 @@
 
 return [
     'welcome' => 'Bienvenue à',
-    'school' => 'École Arabe Genève',
+    'school' => 'École Arabe de Genève',
     "landing_description" => 'École privée située à Genève, affiliée à la Fondation Culturelle Islamique. Fondée en 1978, elle offre un enseignement de qualité en langue arabe, éducation islamique et Coran dans un environnement bienveillant.',
     'landing_btn' => 'En savoir plus',
     'register_btn' => 'Inscrivez-vous',

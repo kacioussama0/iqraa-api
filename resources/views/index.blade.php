@@ -259,89 +259,89 @@
     </section>
 
 
-    <section class="calandar py-5">
+{{--    <section class="calandar py-5">--}}
 
-        <div class="container">
-
-
-
-            <h4 class="lh-lg fw-normal text-center mb-4">
-                <span class="heading-shape fw-bolder">{{ __('home.calandar_title') }} {{ __('home.school_year') }}</span>
-            </h4>
-
-
-            <div class="container my-4">
-                <div class="alert alert-success text-center">
-
-                    {{ __('home.back_to_school_label') }}: {{ __('home.school_year') }}
-                    ({{ __('home.back_to_school_dates') }})
-                </div>
-
-                <div class="alert alert-info text-center">
-                    {{ __('home.end_year_event') }}: {{ __('home.end_year_date') }}
-                </div>
-
-            </div>
-
-
-            <div class="table-responsive">
-                <table class="table table-bordered text-center align-middle">
-                    <thead class="table-warning">
-                    <tr>
-                        <th>{{__('home.vacations')}}</th>
-                        <th>{{__('home.from')}}</th>
-                        <th>{{__("home.to")}}</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    @foreach(__('home.holidays') as $holiday)
-                        <tr>
-                            <td>{{ $holiday['name'] }}</td>
-                            <td>{{ $holiday['from'] }}</td>
-                            <td>{{ $holiday['to'] }}</td>
-                        </tr>
-                    @endforeach
-                    </tbody>
-                </table>
-            </div>
-
-            <div id="calendar"></div>
-
-            <div class="legend d-flex flex-wrap gap-3 mt-4" dir="rtl">
-                <div class="legend-item d-flex align-items-center gap-2">
-                    <div class="legend-color rounded-circle" style="width: 16px; height: 16px; background:#f4a460;"></div>
-                    {{ __('calendar.entrée scolaire') }}
-                </div>
-                <div class="legend-item d-flex align-items-center gap-2">
-                    <div class="legend-color rounded-circle" style="width: 16px; height: 16px; background:#f5cba7;"></div>
-                    {{ __('calendar.vacances scolaires') }}
-                </div>
-                <div class="legend-item d-flex align-items-center gap-2">
-                    <div class="legend-color rounded-circle" style="width: 16px; height: 16px; background:#ff6666;"></div>
-                    {{ __('calendar.eid al fitr') }}
-                </div>
-                <div class="legend-item d-flex align-items-center gap-2">
-                    <div class="legend-color rounded-circle" style="width: 16px; height: 16px; background:#ff99cc;"></div>
-                    {{ __('calendar.eid al adha') }}
-                </div>
-                <div class="legend-item d-flex align-items-center gap-2">
-                    <div class="legend-color rounded-circle" style="width: 16px; height: 16px; background:#9966cc;"></div>
-                    {{ __('calendar.fête fin année') }}
-                </div>
-            </div>
+{{--        <div class="container">--}}
 
 
 
-            <a href="{{asset('assets/pdf/calandrier2024-2025.pdf')}}" class="btn btn-primary d-block btn-lg mt-5">
-                <i class="fa-duotone fa-file-pdf me-2"></i>
-                {{__("home.Download_pdf")}}
-            </a>
+{{--            <h4 class="lh-lg fw-normal text-center mb-4">--}}
+{{--                <span class="heading-shape fw-bolder">{{ __('home.calandar_title') }} {{ __('home.school_year') }}</span>--}}
+{{--            </h4>--}}
+
+
+{{--            <div class="container my-4">--}}
+{{--                <div class="alert alert-success text-center">--}}
+
+{{--                    {{ __('home.back_to_school_label') }}: {{ __('home.school_year') }}--}}
+{{--                    ({{ __('home.back_to_school_dates') }})--}}
+{{--                </div>--}}
+
+{{--                <div class="alert alert-info text-center">--}}
+{{--                    {{ __('home.end_year_event') }}: {{ __('home.end_year_date') }}--}}
+{{--                </div>--}}
+
+{{--            </div>--}}
+
+
+{{--            <div class="table-responsive">--}}
+{{--                <table class="table table-bordered text-center align-middle">--}}
+{{--                    <thead class="table-warning">--}}
+{{--                    <tr>--}}
+{{--                        <th>{{__('home.vacations')}}</th>--}}
+{{--                        <th>{{__('home.from')}}</th>--}}
+{{--                        <th>{{__("home.to")}}</th>--}}
+{{--                    </tr>--}}
+{{--                    </thead>--}}
+{{--                    <tbody>--}}
+{{--                    @foreach(__('home.holidays') as $holiday)--}}
+{{--                        <tr>--}}
+{{--                            <td>{{ $holiday['name'] }}</td>--}}
+{{--                            <td>{{ $holiday['from'] }}</td>--}}
+{{--                            <td>{{ $holiday['to'] }}</td>--}}
+{{--                        </tr>--}}
+{{--                    @endforeach--}}
+{{--                    </tbody>--}}
+{{--                </table>--}}
+{{--            </div>--}}
+
+{{--            <div id="calendar"></div>--}}
+
+{{--            <div class="legend d-flex flex-wrap gap-3 mt-4" dir="rtl">--}}
+{{--                <div class="legend-item d-flex align-items-center gap-2">--}}
+{{--                    <div class="legend-color rounded-circle" style="width: 16px; height: 16px; background:#f4a460;"></div>--}}
+{{--                    {{ __('calendar.entrée scolaire') }}--}}
+{{--                </div>--}}
+{{--                <div class="legend-item d-flex align-items-center gap-2">--}}
+{{--                    <div class="legend-color rounded-circle" style="width: 16px; height: 16px; background:#f5cba7;"></div>--}}
+{{--                    {{ __('calendar.vacances scolaires') }}--}}
+{{--                </div>--}}
+{{--                <div class="legend-item d-flex align-items-center gap-2">--}}
+{{--                    <div class="legend-color rounded-circle" style="width: 16px; height: 16px; background:#ff6666;"></div>--}}
+{{--                    {{ __('calendar.eid al fitr') }}--}}
+{{--                </div>--}}
+{{--                <div class="legend-item d-flex align-items-center gap-2">--}}
+{{--                    <div class="legend-color rounded-circle" style="width: 16px; height: 16px; background:#ff99cc;"></div>--}}
+{{--                    {{ __('calendar.eid al adha') }}--}}
+{{--                </div>--}}
+{{--                <div class="legend-item d-flex align-items-center gap-2">--}}
+{{--                    <div class="legend-color rounded-circle" style="width: 16px; height: 16px; background:#9966cc;"></div>--}}
+{{--                    {{ __('calendar.fête fin année') }}--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
 
 
-        </div>
+{{--            <a href="{{asset('assets/pdf/calandrier2024-2025.pdf')}}" class="btn btn-primary d-block btn-lg mt-5">--}}
+{{--                <i class="fa-duotone fa-file-pdf me-2"></i>--}}
+{{--                {{__("home.Download_pdf")}}--}}
+{{--            </a>--}}
 
-    </section>
+
+
+{{--        </div>--}}
+
+{{--    </section>--}}
 
 @endsection
 
