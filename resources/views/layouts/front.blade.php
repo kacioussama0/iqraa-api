@@ -58,7 +58,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>École Arabe Genève | @yield('title')</title>
+    <title>École Arabe de Genève | @yield('title')</title>
 
     <meta name="description" content="École privée située à Genève, affiliée à la Fondation Culturelle Islamique. Fondée en 1978, elle offre un enseignement de qualité en langue arabe, éducation islamique et Coran dans un environnement bienveillant.">
     <meta name="keywords" content="école arabe Genève, enseignement islamique Genève, cours arabe Genève, culture islamique, Fondation Culturelle Islamique Genève">
@@ -72,7 +72,7 @@
     <meta property="og:image:width" content="800">
     <meta property="og:image:height" content="800">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="École Arabe Genève">
+    <meta name="twitter:title" content="École Arabe de Genève">
     <meta name="twitter:description" content="École privée située à Genève, affiliée à la Fondation Culturelle Islamique. Fondée en 1978, elle offre un enseignement de qualité en langue arabe, éducation islamique et Coran dans un environnement bienveillant.">
     <meta property="twitter:image" content="{{asset('assets/imgs/logo.jpg')}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -93,9 +93,8 @@
 
 
 </head>
-<body style="overflow: hidden">
+<body>
 
-        <x-loader/>
 
 
         <header class="{{request()->path() == '/' ? 'bg-warning-subtle' : "shadow-sm"}} ">
@@ -103,7 +102,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand fw-bolder" href="/" >
-                    <img src="/logo.svg" alt="" style="width: 80px">
+                    <img src="/logo.png" alt="" style="width: 80px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-duotone fa-bars text-primary fa-2x"></i>
@@ -191,7 +190,7 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="mailto:info@fcigeneve.ch">
                                 <i class="fa-duotone fa-mailbox me-1"></i>
-                                info@ecolearabegeneve.ch
+                                info@earabege.ch
                             </a>
                         </li>
                     </ul>

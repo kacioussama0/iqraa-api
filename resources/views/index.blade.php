@@ -42,7 +42,7 @@
                     <h1 class="display-3 fw-bold text-primary text-lg-start text-center">{{__("home.school")}}</h1>
                     <p class="lh-lg text-muted text-lg-start text-center">{{__("home.landing_description")}}</p>
 
-                    <a href="{{url('/registrations')}}" class="btn btn-lg btn-danger rounded-pill px-5 py-2 me-2 fw-bold">{{__("home.register_btn")}} {{date('Y') . '-' . (int) date('Y') + 1}}</a>
+                    <a href="https://eag2.e-manar.com/" class="btn btn-lg btn-danger rounded-pill px-5 py-2 me-2 fw-bold">{{__("home.register_btn")}} {{date('Y') . '-' . (int) date('Y') + 1}}</a>
 
 
 
